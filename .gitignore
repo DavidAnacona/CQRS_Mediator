@@ -21,11 +21,6 @@ obj/
 # ASP.NET Scaffolding
 .scaffolding
 
-# Configuration Files
-appsettings*.json
-app.config
-web.config
-
 # Logs
 *.log
 

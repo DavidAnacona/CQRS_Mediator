@@ -12,9 +12,6 @@ namespace CQRS_Un_Proyecto.Domain.Entities
         public string Medicamentos { get; set; } = null!;
 
         public string? Indicaciones { get; set; }
-
-        public ConsultaEntity IdConsultaNavigation { get; set; } = null!;
-
         public RecetaEntity()
         {
         }
@@ -25,7 +22,6 @@ namespace CQRS_Un_Proyecto.Domain.Entities
             IdConsulta = receta.IdConsulta;
             Medicamentos = receta.Medicamentos;
             Indicaciones = receta.Indicaciones;
-            IdConsultaNavigation = new ConsultaEntity(receta.IdConsultaNavigation);
         }
     }
 }
